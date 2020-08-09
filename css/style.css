@@ -1,0 +1,74 @@
+.container{
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-gap: 10px 10px;
+    grid-template-rows: 5fr 1fr ;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-areas: "header right"
+                        "header search"
+                        "nav nav"
+    
+    }
+    
+    .cell {
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        height: 5fr;
+        border-color: white;
+    }
+    
+    .header {
+        background:#1aa2d4;
+        color: #000;
+        grid-area: header;
+        display: grid;
+        grid-row: 1fr 5fr;
+    }
+    .logo{
+        color: #fff;
+        font-size: 1em;
+    }
+    .cell-2 {
+        background: rgb(255, 104, 205);
+        grid-area: right;
+    }
+    .cell-3 {
+        font-size: 1rem;
+        color: #000;
+        text-align: center;
+        padding: 0;
+        height: 10px;
+        background: #fff;
+        grid-area: search;
+    }.cell-4 {
+        background: red;
+        padding: 10 ;
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    }.footer {
+        background: red;
+    }
+
+.thumbnail {
+position: relative;
+width: 200px;
+height: 200px;
+overflow: hidden;
+}
+.thumbnail img {
+position: absolute;
+left: 50%;
+top: 50%;
+height: 100%;
+width: auto;
+-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+width: 100%;
+height: auto;
+}
